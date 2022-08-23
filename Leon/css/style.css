@@ -372,33 +372,33 @@
         display: none;
     }
     
-    .portfolio .portfolio-content .card::before {
-        content: "Click Here";
-        color: #53566d;
-        background-color: #53566d;
-        width: 80px;
+    .portfolio .portfolio-content .card .btn {
+        background-color: rgba(255, 255, 255, 0.582) ;
+        width: 141px;
         padding: 20px;
         cursor: pointer;
-        line-height: 1.1;
-        letter-spacing: 1.1;
         position: absolute;               /* 2 */
         top: 40%;
         left: 50%;
         margin-right: -50%;
         transform: translate(-50%, -50%);
         border-radius: 50px;
+        border: 1px solid #53566d;
         display: flex;
         text-align: center;
         z-index: 1;
         transition: .7s ease-in-out;
-        font-size: 15px;
         display: none;
-        
     }
-    .portfolio .portfolio-content .card:hover::before , .portfolio .portfolio-content .card:hover::after{display: block; transition: 10s;}
-    .portfolio .portfolio-content .card:hover::before{
-        background-color: white;
+    .portfolio .portfolio-content .card .btn a {
+        color: #53566d;
+        line-height: 1.1;
+        letter-spacing: 1.1;
+        text-align: center;
+        text-decoration: none;
+        font-size: 15px;
     }
+    .portfolio .portfolio-content .card:hover .btn, .portfolio .portfolio-content .card:hover::after{display: block; transition: 10s;}
     /* End Portfolio */
     /* Start About */
     .about {
