@@ -350,6 +350,12 @@
         line-height: 1.6;
         margin-bottom: 0;
     }
+@media (max-width: 767px) {
+        .portfolio .portfolio-content .card:hover{
+        
+            transform:none !important;
+        }
+    }
     .portfolio .portfolio-content .card:hover{
         transform: scale(1.1);
     }
