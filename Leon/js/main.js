@@ -4,7 +4,7 @@ links.onclick = function() { if (document.querySelector(".header .links ul").sty
 } 
 else{document.querySelector(".header .links ul").style.display = "none"}};
 
-var btn = document.querySelector(".up");
+var btn = document.querySelector(".upe");
 
 window.onscroll = function(){
     if(window.scrollY >= 600) {
