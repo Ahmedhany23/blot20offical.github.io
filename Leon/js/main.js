@@ -7,12 +7,13 @@ else{document.querySelector(".header .links ul").style.display = "none"}};
 var btn = document.querySelector(".upe");
 
 window.onscroll = function(){
-    if(window.scrollY >= 600) {
-        btn.style.display = "inline";
-        btn.style.right = "10px";
+   if(window.scrollY >= 200) {
+        btn.style.opacity = 0.5;
+        if(window.scrollY >= 300){btn.style.opacity = 1;}
     }
+    
     else {
-        btn.style.display = "none";
+        btn.style.opacity = 0;
     }
 }
 btn.onclick = function() {window.scroll(0,0)}
